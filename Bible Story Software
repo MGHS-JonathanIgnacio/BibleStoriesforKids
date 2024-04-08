@@ -1,0 +1,933 @@
+import tkinter as tk
+from tkinter import *
+from tkinter import font
+from PIL import Image,ImageTk
+import pygame
+
+win = tk.Tk()
+pygame.mixer.init()
+
+# Font and Colour Styles
+style1 = font.Font(size = 25)
+style2 = font.Font(size = 20)
+colour1 = '#222448'
+colour2 = '#54527E'
+colour3 = 'WHITE'
+
+# Image Allocation
+mainimage = Image.open('Main Page.png').resize((400, 500))
+mimage = ImageTk.PhotoImage(mainimage)
+
+old1image = Image.open('./1-1.png').resize((400, 500))
+o1image = ImageTk.PhotoImage(old1image)
+
+old2image = Image.open('./1-2.png').resize((400, 500))
+o2image = ImageTk.PhotoImage(old2image)
+
+old3image = Image.open('./1-3.png').resize((400, 500))
+o3image = ImageTk.PhotoImage(old3image)
+
+old4image = Image.open('./1-4.png').resize((400, 500))
+o4image = ImageTk.PhotoImage(old4image)
+
+old5image = Image.open('./1-5.png').resize((400, 500))
+o5image = ImageTk.PhotoImage(old5image)
+
+old6image = Image.open('./1-6.png').resize((400, 500))
+o6image = ImageTk.PhotoImage(old6image)
+
+old7image = Image.open('./1-7.png').resize((400, 500))
+o7image = ImageTk.PhotoImage(old7image)
+
+old8image = Image.open('./1-8.png').resize((400, 500))
+o8image = ImageTk.PhotoImage(old8image)
+
+old9image = Image.open('./1-9.png').resize((400, 500))
+o9image = ImageTk.PhotoImage(old9image)
+
+old10image = Image.open('./1-10.png').resize((400, 500))
+o10image = ImageTk.PhotoImage(old10image)
+
+old11image = Image.open('./1-11.png').resize((400, 500))
+o11image = ImageTk.PhotoImage(old11image)
+
+old12image = Image.open('./1-12.png').resize((400, 500))
+o12image = ImageTk.PhotoImage(old12image)
+
+old13image = Image.open('./1-13.png').resize((400, 500))
+o13image = ImageTk.PhotoImage(old13image)
+
+old14image = Image.open('./1-14.png').resize((400, 500))
+o14image = ImageTk.PhotoImage(old14image)
+
+old15image = Image.open('./1-15.png').resize((400, 500))
+o15image = ImageTk.PhotoImage(old15image)
+
+old16image = Image.open('./1-16.png').resize((400, 500))
+o16image = ImageTk.PhotoImage(old16image)
+
+old17image = Image.open('./1-17.png').resize((400, 500))
+o17image = ImageTk.PhotoImage(old17image)
+
+old18image = Image.open('./1-18.png').resize((400, 500))
+o18image = ImageTk.PhotoImage(old18image)
+
+new1image = Image.open('./2-1.png').resize((400, 500))
+n1image = ImageTk.PhotoImage(new1image)
+
+new2image = Image.open('./2-2.png').resize((400, 500))
+n2image = ImageTk.PhotoImage(new2image)
+
+new3image = Image.open('./2-3.png').resize((400, 500))
+n3image = ImageTk.PhotoImage(new3image)
+
+new4image = Image.open('./2-4.png').resize((400, 500))
+n4image = ImageTk.PhotoImage(new4image)
+
+new5image = Image.open('./2-5.png').resize((400, 500))
+n5image = ImageTk.PhotoImage(new5image)
+
+new6image = Image.open('./2-6.png').resize((400, 500))
+n6image = ImageTk.PhotoImage(new6image)
+
+new7image = Image.open('./2-7.png').resize((400, 500))
+n7image = ImageTk.PhotoImage(new7image)
+
+new8image = Image.open('./2-8.png').resize((400, 500))
+n8image = ImageTk.PhotoImage(new8image)
+
+new9image = Image.open('./2-9.png').resize((400, 500))
+n9image = ImageTk.PhotoImage(new9image)
+
+new10image = Image.open('./2-10.png').resize((400, 500))
+n10image = ImageTk.PhotoImage(new10image)
+
+new11image = Image.open('./2-11.png').resize((400, 500))
+n11image = ImageTk.PhotoImage(new11image)
+
+new12image = Image.open('./2-12.png').resize((400, 500))
+n12image = ImageTk.PhotoImage(new12image)
+
+new13image = Image.open('./2-13.png').resize((400, 500))
+n13image = ImageTk.PhotoImage(new13image)
+
+new14image = Image.open('./2-14.png').resize((400, 500))
+n14image = ImageTk.PhotoImage(new14image)
+
+new15image = Image.open('./2-15.png').resize((400, 500))
+n15image = ImageTk.PhotoImage(new15image)
+
+# Music Definitions
+def stop():
+    pygame.mixer.music.stop()
+
+def pomusic1():
+    pygame.mixer.music.load("omusic1.mp3")
+    pygame.mixer.music.play(loops=0)
+
+def pomusic2():
+    pygame.mixer.music.load("omusic2.mp3")
+    pygame.mixer.music.play(loops=0)
+
+def pomusic3():
+    pygame.mixer.music.load("omusic3.mp3")
+    pygame.mixer.music.play(loops=0)
+
+def pomusic4():
+    pygame.mixer.music.load("omusic4.mp3")
+    pygame.mixer.music.play(loops=0)
+
+def pomusic5():
+    pygame.mixer.music.load("omusic5.mp3")
+    pygame.mixer.music.play(loops=0)
+
+def pomusic6():
+    pygame.mixer.music.load("omusic6.mp3")
+    pygame.mixer.music.play(loops=0)
+
+def pomusic7():
+    pygame.mixer.music.load("omusic7.mp3")
+    pygame.mixer.music.play(loops=0)
+
+def pomusic8():
+    pygame.mixer.music.load("omusic8.mp3")
+    pygame.mixer.music.play(loops=0)
+
+def pomusic9():
+    pygame.mixer.music.load("omusic9.mp3")
+    pygame.mixer.music.play(loops=0)
+
+def pomusic10():
+    pygame.mixer.music.load("omusic10.mp3")
+    pygame.mixer.music.play(loops=0)
+
+def pomusic11():
+    pygame.mixer.music.load("omusic11.mp3")
+    pygame.mixer.music.play(loops=0)
+
+def pomusic12():
+    pygame.mixer.music.load("omusic12.mp3")
+    pygame.mixer.music.play(loops=0)
+
+def pomusic13():
+    pygame.mixer.music.load("omusic13.mp3")
+    pygame.mixer.music.play(loops=0)
+
+def pomusic14():
+    pygame.mixer.music.load("omusic14.mp3")
+    pygame.mixer.music.play(loops=0)
+
+def pomusic15():
+    pygame.mixer.music.load("omusic15.mp3")
+    pygame.mixer.music.play(loops=0)
+
+def pomusic16():
+    pygame.mixer.music.load("omusic16.mp3")
+    pygame.mixer.music.play(loops=0)
+
+def pomusic17():
+    pygame.mixer.music.load("omusic17.mp3")
+    pygame.mixer.music.play(loops=0)
+
+def pomusic18():
+    pygame.mixer.music.load("omusic18.mp3")
+    pygame.mixer.music.play(loops=0)
+
+def pnmusic1():
+    pygame.mixer.music.load("nmusic1.mp3")
+    pygame.mixer.music.play(loops=0)
+
+def pnmusic2():
+    pygame.mixer.music.load("nmusic2.mp3")
+    pygame.mixer.music.play(loops=0)
+
+def pnmusic3():
+    pygame.mixer.music.load("nmusic3.mp3")
+    pygame.mixer.music.play(loops=0)
+
+def pnmusic4():
+    pygame.mixer.music.load("nmusic4.mp3")
+    pygame.mixer.music.play(loops=0)
+
+def pnmusic5():
+    pygame.mixer.music.load("nmusic5.mp3")
+    pygame.mixer.music.play(loops=0)
+
+def pnmusic6():
+    pygame.mixer.music.load("nmusic6.mp3")
+    pygame.mixer.music.play(loops=0)
+
+def pnmusic7():
+    pygame.mixer.music.load("nmusic7.mp3")
+    pygame.mixer.music.play(loops=0)
+
+def pnmusic8():
+    pygame.mixer.music.load("nmusic8.mp3")
+    pygame.mixer.music.play(loops=0)
+
+def pnmusic9():
+    pygame.mixer.music.load("nmusic9.mp3")
+    pygame.mixer.music.play(loops=0)
+
+def pnmusic10():
+    pygame.mixer.music.load("nmusic10.mp3")
+    pygame.mixer.music.play(loops=0)
+
+def pnmusic11():
+    pygame.mixer.music.load("nmusic11.mp3")
+    pygame.mixer.music.play(loops=0)
+
+def pnmusic12():
+    pygame.mixer.music.load("nmusic12.mp3")
+    pygame.mixer.music.play(loops=0)
+
+def pnmusic13():
+    pygame.mixer.music.load("nmusic13.mp3")
+    pygame.mixer.music.play(loops=0)
+
+def pnmusic14():
+    pygame.mixer.music.load("nmusic14.mp3")
+    pygame.mixer.music.play(loops=0)
+
+def pnmusic15():
+    pygame.mixer.music.load("nmusic15.mp3")
+    pygame.mixer.music.play(loops=0)
+
+# Frames for Pages
+main = Frame(win)
+old1 = Frame(win)
+old2 = Frame(win)
+old3 = Frame(win)
+old4 = Frame(win)
+old5 = Frame(win)
+old6 = Frame(win)
+old7 = Frame(win)
+old8 = Frame(win)
+old9 = Frame(win)
+old10 = Frame(win)
+old11 = Frame(win)
+old12 = Frame(win)
+old13 = Frame(win)
+old14 = Frame(win)
+old15 = Frame(win)
+old16 = Frame(win)
+old17 = Frame(win)
+old18 = Frame(win)
+new1 = Frame(win)
+new2 = Frame(win)
+new3 = Frame(win)
+new4 = Frame(win)
+new5 = Frame(win)
+new6 = Frame(win)
+new7 = Frame(win)
+new8 = Frame(win)
+new9 = Frame(win)
+new10 = Frame(win)
+new11 = Frame(win)
+new12 = Frame(win)
+new13 = Frame(win)
+new14 = Frame(win)
+new15 = Frame(win)
+
+# Grids for Pages
+main.grid(row=0, column=0, sticky="nsew")
+old1.grid(row=0, column=0, sticky="nsew")
+old2.grid(row=0, column=0, sticky="nsew")
+old3.grid(row=0, column=0, sticky="nsew")
+old4.grid(row=0, column=0, sticky="nsew")
+old5.grid(row=0, column=0, sticky="nsew")
+old6.grid(row=0, column=0, sticky="nsew")
+old7.grid(row=0, column=0, sticky="nsew")
+old8.grid(row=0, column=0, sticky="nsew")
+old9.grid(row=0, column=0, sticky="nsew")
+old10.grid(row=0, column=0, sticky="nsew")
+old11.grid(row=0, column=0, sticky="nsew")
+old12.grid(row=0, column=0, sticky="nsew")
+old13.grid(row=0, column=0, sticky="nsew")
+old14.grid(row=0, column=0, sticky="nsew")
+old15.grid(row=0, column=0, sticky="nsew")
+old16.grid(row=0, column=0, sticky="nsew")
+old17.grid(row=0, column=0, sticky="nsew")
+old18.grid(row=0, column=0, sticky="nsew")
+new1.grid(row=0, column=0, sticky="nsew")
+new2.grid(row=0, column=0, sticky="nsew")
+new3.grid(row=0, column=0, sticky="nsew")
+new4.grid(row=0, column=0, sticky="nsew")
+new5.grid(row=0, column=0, sticky="nsew")
+new6.grid(row=0, column=0, sticky="nsew")
+new7.grid(row=0, column=0, sticky="nsew")
+new8.grid(row=0, column=0, sticky="nsew")
+new9.grid(row=0, column=0, sticky="nsew")
+new10.grid(row=0, column=0, sticky="nsew")
+new11.grid(row=0, column=0, sticky="nsew")
+new12.grid(row=0, column=0, sticky="nsew")
+new13.grid(row=0, column=0, sticky="nsew")
+new14.grid(row=0, column=0, sticky="nsew")
+new15.grid(row=0, column=0, sticky="nsew")
+
+# Main Screen
+lblmain = Label(main, image= mimage)
+lblmain.pack()
+
+oldbtn = Button(main, text="Old Testament", command=lambda: old1.tkraise(), font=style2)
+oldbtn.pack(pady=50)
+
+newbtn = Button(main, text="New Testament", command=lambda: new1.tkraise(), font=style2)
+newbtn.pack()
+
+# Old Testament Home Buttons
+homebtn = Button(old1, text="Home", command=lambda: main.tkraise(), font=style2)
+homebtn.pack()
+
+homebtn = Button(old2, text="Home", command=lambda: main.tkraise(), font=style2)
+homebtn.pack()
+
+homebtn = Button(old3, text="Home", command=lambda: main.tkraise(), font=style2)
+homebtn.pack()
+
+homebtn = Button(old4, text="Home", command=lambda: main.tkraise(), font=style2)
+homebtn.pack()
+
+homebtn = Button(old5, text="Home", command=lambda: main.tkraise(), font=style2)
+homebtn.pack()
+
+homebtn = Button(old6, text="Home", command=lambda: main.tkraise(), font=style2)
+homebtn.pack()
+
+homebtn = Button(old7, text="Home", command=lambda: main.tkraise(), font=style2)
+homebtn.pack()
+
+homebtn = Button(old8, text="Home", command=lambda: main.tkraise(), font=style2)
+homebtn.pack()
+
+homebtn = Button(old9, text="Home", command=lambda: main.tkraise(), font=style2)
+homebtn.pack()
+
+homebtn = Button(old10, text="Home", command=lambda: main.tkraise(), font=style2)
+homebtn.pack()
+
+homebtn = Button(old11, text="Home", command=lambda: main.tkraise(), font=style2)
+homebtn.pack()
+
+homebtn = Button(old12, text="Home", command=lambda: main.tkraise(), font=style2)
+homebtn.pack()
+
+homebtn = Button(old13, text="Home", command=lambda: main.tkraise(), font=style2)
+homebtn.pack()
+
+homebtn = Button(old14, text="Home", command=lambda: main.tkraise(), font=style2)
+homebtn.pack()
+
+homebtn = Button(old15, text="Home", command=lambda: main.tkraise(), font=style2)
+homebtn.pack()
+
+homebtn = Button(old16, text="Home", command=lambda: main.tkraise(), font=style2)
+homebtn.pack()
+
+homebtn = Button(old17, text="Home", command=lambda: main.tkraise(), font=style2)
+homebtn.pack()
+
+homebtn = Button(old18, text="Home", command=lambda: main.tkraise(), font=style2)
+homebtn.pack()
+
+# Labels for Old Testament
+lblold1 = Label(old1, image= o1image)
+lblold1.pack()
+
+lblold2 = Label(old2, image= o2image)
+lblold2.pack()
+
+lblold3 = Label(old3, image= o3image)
+lblold3.pack()
+
+lblold4 = Label(old4, image= o4image)
+lblold4.pack()
+
+lblold5 = Label(old5, image= o5image)
+lblold5.pack()
+
+lblold6 = Label(old6, image= o6image)
+lblold6.pack()
+
+lblold7 = Label(old7, image= o7image)
+lblold7.pack()
+
+lblold8 = Label(old8, image= o8image)
+lblold8.pack()
+
+lblold9 = Label(old9, image= o9image)
+lblold9.pack()
+
+lblold10 = Label(old10, image= o10image)
+lblold10.pack()
+
+lblold11 = Label(old11, image= o11image)
+lblold11.pack()
+
+lblold12 = Label(old12, image= o12image)
+lblold12.pack()
+
+lblold13 = Label(old13, image= o13image)
+lblold13.pack()
+
+lblold14 = Label(old14, image= o14image)
+lblold14.pack()
+
+lblold15 = Label(old15, image= o15image)
+lblold15.pack()
+
+lblold16 = Label(old16, image= o16image)
+lblold16.pack()
+
+lblold17 = Label(old17, image= o17image)
+lblold17.pack()
+
+lblold18 = Label(old18, image= o18image)
+lblold18.pack()
+
+# Old Testament Stop Play Music
+gomusic1 = Button(old1, text="Play Audio", command=pomusic1, font=style2)
+gomusic1.pack()
+
+eomusic1 = Button(old1, text="Stop Audio", command=stop, font=style2)
+eomusic1.pack()
+
+gomusic2 = Button(old2, text="Play Audio", command=pomusic2, font=style2)
+gomusic2.pack()
+
+eomusic2 = Button(old2, text="Stop Audio", command=stop, font=style2)
+eomusic2.pack()
+
+gomusic3 = Button(old3, text="Play Audio", command=pomusic3, font=style2)
+gomusic3.pack()
+
+eomusic3 = Button(old3, text="Stop Audio", command=stop, font=style2)
+eomusic3.pack()
+
+gomusic4 = Button(old4, text="Play Audio", command=pomusic4, font=style2)
+gomusic4.pack()
+
+eomusic4 = Button(old4, text="Stop Audio", command=stop, font=style2)
+eomusic4.pack()
+
+gomusic5 = Button(old5, text="Play Audio", command=pomusic5, font=style2)
+gomusic5.pack()
+
+eomusic5 = Button(old5, text="Stop Audio", command=stop, font=style2)
+eomusic5.pack()
+
+gomusic6 = Button(old6, text="Play Audio", command=pomusic6, font=style2)
+gomusic6.pack()
+
+eomusic6 = Button(old6, text="Stop Audio", command=stop, font=style2)
+eomusic6.pack()
+
+gomusic7 = Button(old7, text="Play Audio", command=pomusic7, font=style2)
+gomusic7.pack()
+
+eomusic7 = Button(old7, text="Stop Audio", command=stop, font=style2)
+eomusic7.pack()
+
+gomusic8 = Button(old8, text="Play Audio", command=pomusic8, font=style2)
+gomusic8.pack()
+
+eomusic8 = Button(old8, text="Stop Audio", command=stop, font=style2)
+eomusic8.pack()
+
+gomusic9 = Button(old9, text="Play Audio", command=pomusic9, font=style2)
+gomusic9.pack()
+
+eomusic9 = Button(old9, text="Stop Audio", command=stop, font=style2)
+eomusic9.pack()
+
+gomusic10 = Button(old10, text="Play Audio", command=pomusic10, font=style2)
+gomusic10.pack()
+
+eomusic10 = Button(old10, text="Stop Audio", command=stop, font=style2)
+eomusic10.pack()
+
+gomusic11 = Button(old11, text="Play Audio", command=pomusic11, font=style2)
+gomusic11.pack()
+
+eomusic11 = Button(old11, text="Stop Audio", command=stop, font=style2)
+eomusic11.pack()
+
+gomusic12 = Button(old12, text="Play Audio", command=pomusic12, font=style2)
+gomusic12.pack()
+
+eomusic12 = Button(old12, text="Stop Audio", command=stop, font=style2)
+eomusic12.pack()
+
+gomusic13 = Button(old13, text="Play Audio", command=pomusic13, font=style2)
+gomusic13.pack()
+
+eomusic13 = Button(old13, text="Stop Audio", command=stop, font=style2)
+eomusic13.pack()
+
+gomusic14 = Button(old14, text="Play Audio", command=pomusic14, font=style2)
+gomusic14.pack()
+
+eomusic14 = Button(old14, text="Stop Audio", command=stop, font=style2)
+eomusic14.pack()
+
+gomusic15 = Button(old15, text="Play Audio", command=pomusic15, font=style2)
+gomusic15.pack()
+
+eomusic15 = Button(old15, text="Stop Audio", command=stop, font=style2)
+eomusic15.pack()
+
+gomusic16 = Button(old16, text="Play Audio", command=pomusic16, font=style2)
+gomusic16.pack()
+
+eomusic16 = Button(old16, text="Stop Audio", command=stop, font=style2)
+eomusic16.pack()
+
+gomusic17 = Button(old17, text="Play Audio", command=pomusic17, font=style2)
+gomusic17.pack()
+
+eomusic17 = Button(old17, text="Stop Audio", command=stop, font=style2)
+eomusic17.pack()
+
+gomusic18 = Button(old18, text="Play Audio", command=pomusic18, font=style2)
+gomusic18.pack()
+
+eomusic18 = Button(old18, text="Stop Audio", command=stop, font=style2)
+eomusic18.pack()
+
+# Old Testament Next and Previous Buttons
+onbtn = Button(old1, text='Next', command=lambda: old2.tkraise(), font=style2)
+onbtn.pack()
+
+onbtn = Button(old2, text='Next', command=lambda: old3.tkraise(), font=style2)
+onbtn.pack()
+
+opbtn = Button(old2, text='Previous', command=lambda: old1.tkraise(), font=style2)
+opbtn.pack()
+
+onbtn = Button(old3, text='Next', command=lambda: old4.tkraise(), font=style2)
+onbtn.pack()
+
+opbtn = Button(old3, text='Previous', command=lambda: old2.tkraise(), font=style2)
+opbtn.pack()
+
+onbtn = Button(old4, text='Next', command=lambda: old5.tkraise(), font=style2)
+onbtn.pack()
+
+opbtn = Button(old4, text='Previous', command=lambda: old3.tkraise(), font=style2)
+opbtn.pack()
+
+onbtn = Button(old5, text='Next', command=lambda: old6.tkraise(), font=style2)
+onbtn.pack()
+
+opbtn = Button(old5, text='Previous', command=lambda: old4.tkraise(), font=style2)
+opbtn.pack()
+
+onbtn = Button(old6, text='Next', command=lambda: old7.tkraise(), font=style2)
+onbtn.pack()
+
+opbtn = Button(old6, text='Previous', command=lambda: old5.tkraise(), font=style2)
+opbtn.pack()
+
+onbtn = Button(old7, text='Next', command=lambda: old8.tkraise(), font=style2)
+onbtn.pack()
+
+opbtn = Button(old7, text='Previous', command=lambda: old6.tkraise(), font=style2)
+opbtn.pack()
+
+onbtn = Button(old8, text='Next', command=lambda: old9.tkraise(), font=style2)
+onbtn.pack()
+
+opbtn = Button(old8, text='Previous', command=lambda: old7.tkraise(), font=style2)
+opbtn.pack()
+
+onbtn = Button(old9, text='Next', command=lambda: old10.tkraise(), font=style2)
+onbtn.pack()
+
+opbtn = Button(old9, text='Previous', command=lambda: old8.tkraise(), font=style2)
+opbtn.pack()
+
+onbtn = Button(old10, text='Next', command=lambda: old11.tkraise(), font=style2)
+onbtn.pack()
+
+opbtn = Button(old10, text='Previous', command=lambda: old9.tkraise(), font=style2)
+opbtn.pack()
+
+onbtn = Button(old11, text='Next', command=lambda: old12.tkraise(), font=style2)
+onbtn.pack()
+
+opbtn = Button(old11, text='Previous', command=lambda: old10.tkraise(), font=style2)
+opbtn.pack()
+
+onbtn = Button(old12, text='Next', command=lambda: old13.tkraise(), font=style2)
+onbtn.pack()
+
+opbtn = Button(old12, text='Previous', command=lambda: old11.tkraise(), font=style2)
+opbtn.pack()
+
+onbtn = Button(old13, text='Next', command=lambda: old14.tkraise(), font=style2)
+onbtn.pack()
+
+opbtn = Button(old13, text='Previous', command=lambda: old12.tkraise(), font=style2)
+opbtn.pack()
+
+onbtn = Button(old14, text='Next', command=lambda: old15.tkraise(), font=style2)
+onbtn.pack()
+
+opbtn = Button(old14, text='Previous', command=lambda: old13.tkraise(), font=style2)
+opbtn.pack()
+
+onbtn = Button(old15, text='Next', command=lambda: old16.tkraise(), font=style2)
+onbtn.pack()
+
+opbtn = Button(old15, text='Previous', command=lambda: old14.tkraise(), font=style2)
+opbtn.pack()
+
+onbtn = Button(old16, text='Next', command=lambda: old17.tkraise(), font=style2)
+onbtn.pack()
+
+opbtn = Button(old16, text='Previous', command=lambda: old15.tkraise(), font=style2)
+opbtn.pack()
+
+onbtn = Button(old17, text='Next', command=lambda: old18.tkraise(), font=style2)
+onbtn.pack()
+
+opbtn = Button(old17, text='Previous', command=lambda: old16.tkraise(), font=style2)
+opbtn.pack()
+
+opbtn = Button(old18, text='Previous', command=lambda: old17.tkraise(), font=style2)
+opbtn.pack()
+
+# New Testament Home Buttons
+homebtn = Button(new1, text="Home", command=lambda: main.tkraise(), font=style2)
+homebtn.pack()
+
+homebtn = Button(new2, text="Home", command=lambda: main.tkraise(), font=style2)
+homebtn.pack()
+
+homebtn = Button(new3, text="Home", command=lambda: main.tkraise(), font=style2)
+homebtn.pack()
+
+homebtn = Button(new4, text="Home", command=lambda: main.tkraise(), font=style2)
+homebtn.pack()
+
+homebtn = Button(new5, text="Home", command=lambda: main.tkraise(), font=style2)
+homebtn.pack()
+
+homebtn = Button(new6, text="Home", command=lambda: main.tkraise(), font=style2)
+homebtn.pack()
+
+homebtn = Button(new7, text="Home", command=lambda: main.tkraise(), font=style2)
+homebtn.pack()
+
+homebtn = Button(new8, text="Home", command=lambda: main.tkraise(), font=style2)
+homebtn.pack()
+
+homebtn = Button(new9, text="Home", command=lambda: main.tkraise(), font=style2)
+homebtn.pack()
+
+homebtn = Button(new10, text="Home", command=lambda: main.tkraise(), font=style2)
+homebtn.pack()
+
+homebtn = Button(new11, text="Home", command=lambda: main.tkraise(), font=style2)
+homebtn.pack()
+
+homebtn = Button(new12, text="Home", command=lambda: main.tkraise(), font=style2)
+homebtn.pack()
+
+homebtn = Button(new13, text="Home", command=lambda: main.tkraise(), font=style2)
+homebtn.pack()
+
+homebtn = Button(new14, text="Home", command=lambda: main.tkraise(), font=style2)
+homebtn.pack()
+
+homebtn = Button(new15, text="Home", command=lambda: main.tkraise(), font=style2)
+homebtn.pack()
+
+# New Testament Pages
+lblnew1 = Label(new1, image= n1image)
+lblnew1.pack()
+
+lblnew2 = Label(new2, image= n2image)
+lblnew2.pack()
+
+lblnew3 = Label(new3, image= n3image)
+lblnew3.pack()
+
+lblnew4 = Label(new4, image= n4image)
+lblnew4.pack()
+
+lblnew5 = Label(new5, image= n5image)
+lblnew5.pack()
+
+lblnew6 = Label(new6, image= n6image)
+lblnew6.pack()
+
+lblnew7 = Label(new7, image= n7image)
+lblnew7.pack()
+
+lblnew8 = Label(new8, image= n8image)
+lblnew8.pack()
+
+lblnew9 = Label(new9, image= n9image)
+lblnew9.pack()
+
+lblnew10 = Label(new10, image= n10image)
+lblnew10.pack()
+
+lblnew11 = Label(new11, image= n11image)
+lblnew11.pack()
+
+lblnew12 = Label(new12, image= n12image)
+lblnew12.pack()
+
+lblnew13 = Label(new13, image= n13image)
+lblnew13.pack()
+
+lblnew14 = Label(new14, image= n14image)
+lblnew14.pack()
+
+lblnew15 = Label(new15, image= n15image)
+lblnew15.pack()
+
+# New Testament Stop Play Music
+gnmusic1 = Button(new1, text="Play Audio", command=pnmusic1, font=style2)
+gnmusic1.pack()
+
+enmusic1 = Button(new1, text="Stop Audio", command=stop, font=style2)
+enmusic1.pack()
+
+gnmusic2 = Button(new2, text="Play Audio", command=pnmusic2, font=style2)
+gnmusic2.pack()
+
+enmusic2 = Button(new2, text="Stop Audio", command=stop, font=style2)
+enmusic2.pack()
+
+gnmusic3 = Button(new3, text="Play Audio", command=pnmusic3, font=style2)
+gnmusic3.pack()
+
+enmusic3 = Button(new3, text="Stop Audio", command=stop, font=style2)
+enmusic3.pack()
+
+gnmusic4 = Button(new4, text="Play Audio", command=pnmusic4, font=style2)
+gnmusic4.pack()
+
+enmusic4 = Button(new4, text="Stop Audio", command=stop, font=style2)
+enmusic4.pack()
+
+gnmusic5 = Button(new5, text="Play Audio", command=pnmusic5, font=style2)
+gnmusic5.pack()
+
+enmusic5 = Button(new5, text="Stop Audio", command=stop, font=style2)
+enmusic5.pack()
+
+gnmusic6 = Button(new6, text="Play Audio", command=pnmusic6, font=style2)
+gnmusic6.pack()
+
+enmusic6 = Button(new6, text="Stop Audio", command=stop, font=style2)
+enmusic6.pack()
+
+gnmusic7 = Button(new7, text="Play Audio", command=pnmusic7, font=style2)
+gnmusic7.pack()
+
+enmusic7 = Button(new7, text="Stop Audio", command=stop, font=style2)
+enmusic7.pack()
+
+gnmusic8 = Button(new8, text="Play Audio", command=pnmusic8, font=style2)
+gnmusic8.pack()
+
+enmusic8 = Button(new8, text="Stop Audio", command=stop, font=style2)
+enmusic8.pack()
+
+gnmusic9 = Button(new9, text="Play Audio", command=pnmusic9, font=style2)
+gnmusic9.pack()
+
+enmusic9 = Button(new9, text="Stop Audio", command=stop, font=style2)
+enmusic9.pack()
+
+gnmusic10 = Button(new10, text="Play Audio", command=pnmusic10, font=style2)
+gnmusic10.pack()
+
+enmusic10 = Button(new10, text="Stop Audio", command=stop, font=style2)
+enmusic10.pack()
+
+gnmusic11 = Button(new11, text="Play Audio", command=pnmusic11, font=style2)
+gnmusic11.pack()
+
+enmusic11 = Button(new11, text="Stop Audio", command=stop, font=style2)
+enmusic11.pack()
+
+gnmusic12 = Button(new12, text="Play Audio", command=pnmusic12, font=style2)
+gnmusic12.pack()
+
+enmusic12 = Button(new12, text="Stop Audio", command=stop, font=style2)
+enmusic12.pack()
+
+gnmusic13 = Button(new13, text="Play Audio", command=pnmusic13, font=style2)
+gnmusic13.pack()
+
+enmusic13 = Button(new13, text="Stop Audio", command=stop, font=style2)
+enmusic13.pack()
+
+gnmusic14 = Button(new14, text="Play Audio", command=pnmusic14, font=style2)
+gnmusic14.pack()
+
+enmusic14 = Button(new14, text="Stop Audio", command=stop, font=style2)
+enmusic14.pack()
+
+gnmusic15 = Button(new15, text="Play Audio", command=pnmusic15, font=style2)
+gnmusic15.pack()
+
+enmusic15 = Button(new15, text="Stop Audio", command=stop, font=style2)
+enmusic15.pack()
+
+# New Testament Next and Previous Buttons
+nnbtn = Button(new1, text='Next', command=lambda: new2.tkraise(), font=style2)
+nnbtn.pack()
+
+nnbtn = Button(new2, text='Next', command=lambda: new3.tkraise(), font=style2)
+nnbtn.pack()
+
+pnbtn = Button(new2, text='Previous', command=lambda: new1.tkraise(), font=style2)
+pnbtn.pack()
+
+nnbtn = Button(new3, text='Next', command=lambda: new4.tkraise(), font=style2)
+nnbtn.pack()
+
+pnbtn = Button(new3, text='Previous', command=lambda: new2.tkraise(), font=style2)
+pnbtn.pack()
+
+nnbtn = Button(new4, text='Next', command=lambda: new5.tkraise(), font=style2)
+nnbtn.pack()
+
+pnbtn = Button(new4, text='Previous', command=lambda: new3.tkraise(), font=style2)
+pnbtn.pack()
+
+nnbtn = Button(new5, text='Next', command=lambda: new6.tkraise(), font=style2)
+nnbtn.pack()
+
+pnbtn = Button(new5, text='Previous', command=lambda: new4.tkraise(), font=style2)
+pnbtn.pack()
+
+nnbtn = Button(new6, text='Next', command=lambda: new7.tkraise(), font=style2)
+nnbtn.pack()
+
+pnbtn = Button(new6, text='Previous', command=lambda: new5.tkraise(), font=style2)
+pnbtn.pack()
+
+nnbtn = Button(new7, text='Next', command=lambda: new8.tkraise(), font=style2)
+nnbtn.pack()
+
+pnbtn = Button(new7, text='Previous', command=lambda: new6.tkraise(), font=style2)
+pnbtn.pack()
+
+nnbtn = Button(new8, text='Next', command=lambda: new9.tkraise(), font=style2)
+nnbtn.pack()
+
+pnbtn = Button(new8, text='Previous', command=lambda: new7.tkraise(), font=style2)
+pnbtn.pack()
+
+nnbtn = Button(new9, text='Next', command=lambda: new10.tkraise(), font=style2)
+nnbtn.pack()
+
+pnbtn = Button(new9, text='Previous', command=lambda: new8.tkraise(), font=style2)
+pnbtn.pack()
+
+nnbtn = Button(new10, text='Next', command=lambda: new11.tkraise(), font=style2)
+nnbtn.pack()
+
+pnbtn = Button(new10, text='Previous', command=lambda: new9.tkraise(), font=style2)
+pnbtn.pack()
+
+nnbtn = Button(new11, text='Next', command=lambda: new12.tkraise(), font=style2)
+nnbtn.pack()
+
+pnbtn = Button(new11, text='Previous', command=lambda: new10.tkraise(), font=style2)
+pnbtn.pack()
+
+nnbtn = Button(new12, text='Next', command=lambda: new13.tkraise(), font=style2)
+nnbtn.pack()
+
+pnbtn = Button(new12, text='Previous', command=lambda: new11.tkraise(), font=style2)
+pnbtn.pack()
+
+nnbtn = Button(new13, text='Next', command=lambda: new14.tkraise(), font=style2)
+nnbtn.pack()
+
+pnbtn = Button(new13, text='Previous', command=lambda: new12.tkraise(), font=style2)
+pnbtn.pack()
+
+nnbtn = Button(new14, text='Next', command=lambda: new15.tkraise(), font=style2)
+nnbtn.pack()
+
+pnbtn = Button(new14, text='Previous', command=lambda: new13.tkraise(), font=style2)
+pnbtn.pack()
+
+pnbtn = Button(new15, text='Previous', command=lambda: new14.tkraise(), font=style2)
+pnbtn.pack()
+
+# Run Program
+main.tkraise()
+win.geometry("400x800")
+win.title("Bible Stories for Kids")
+win.resizable(False, False)
+win.mainloop()
